@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10pt"
+    android:layout_marginBottom="10pt"
+    android:layout_marginTop="10pt"
+    android:layout_marginRight="10pt">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cryptobox"
+        android:textSize="30dp"
+        android:layout_marginBottom="10pt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextOpenSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="@string/nameFile"
+                 />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="@string/Search"
+            android:id="@+id/buttonOpenBoxSearch"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="@string/addFile"
+            android:id="@+id/buttonOpenBoxAddFile"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewOpenBoxItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/padding_small"
+        android:padding="@dimen/padding_small"
+        tools:listitem="@layout/item" />
+
+</LinearLayout>

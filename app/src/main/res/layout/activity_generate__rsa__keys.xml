@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Generate_RSA_KeysActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15pt"
+            android:text="@string/rsa" />
+        <EditText
+            android:id="@+id/editTextGenRSA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/SizeKey"
+            android:text="@string/_1024"
+            android:inputType="number"/>
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/buttonRsa_Generate_Keys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Generate_rsa"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

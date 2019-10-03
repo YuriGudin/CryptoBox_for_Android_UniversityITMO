@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cryptobox.cryptoboxforandroid">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SymmetricEncryptionActivity"></activity>
+        <activity android:name=".Generate_RSA_KeysActivity" />
+        <activity
+            android:name=".CheckSumActivity"
+            android:label="@string/title_activity_check_sum"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cryptobox.cryptoboxforandroid.MainActivity" />
+        </activity>
+        <activity android:name=".TestInfoActivity" />
+        <activity android:name=".TutorialActivity" />
+        <activity android:name=".ProgramVersionActivity" />
+        <activity android:name=".AboutProgramActivity" />
+        <activity
+            android:name=".PasswordGeneratorActivity"
+            android:label="@string/title_activity_password_generator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AsymmetricEncryptionActivity"
+            android:label="@string/Asymmetric_encryption"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OpenActivity"
+            android:label="@string/OpenContainer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RabinCryptoSystemActivity"
+            android:label="@string/Rabin_Cryptosystem"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

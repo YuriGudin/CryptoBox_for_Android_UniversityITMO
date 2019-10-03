@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymmetricEncryptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aes_128_cbc_pkcs5padding"/>
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/buttonSymmetricEncryptionSelectFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selectFile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSymmetricEncryptionSelectFile"
+            android:text="@string/NoSelectFile"/>
+        <EditText
+            android:id="@+id/editTextSymmetricEncryptionIV"
+            android:hint="@string/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/buttonRandomIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/randomIV"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/buttonSymmetricEncryptionEncrypt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/Encrypt"/>
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/buttonSymmetricEncryptionDecrypt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/Decrypt"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
